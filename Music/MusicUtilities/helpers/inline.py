@@ -171,38 +171,7 @@ def personal_markup(link):
     return buttons
 
 
-start_keyboard = InlineKeyboardMarkup(
-    [
-        [
-            InlineKeyboardButton(
-                "📚 ᴅᴀꜰᴛᴀʀ ᴘᴇʀɪɴᴛᴀʜ​ 📚", url="https://telegra.ph/ҡʏʏ-ᴍᴇᴍ-ᴇx-01-21-2"
-            )
-        ],
-        [InlineKeyboardButton("ᴛᴜᴛᴜᴘ", callback_data="close2")],
-    ]
-)
 
-confirm_keyboard = InlineKeyboardMarkup(
-    [
-        [
-            InlineKeyboardButton("ʏᴀ", callback_data="cbdel"),
-            InlineKeyboardButton("ᴛɪᴅᴀᴋ", callback_data="close2"),
-        ]
-    ]
-)
-
-confirm_group_keyboard = InlineKeyboardMarkup(
-    [
-        [
-            InlineKeyboardButton("ʏᴀ", callback_data="cbgroupdel"),
-            InlineKeyboardButton("ᴛɪᴅᴀᴋ", callback_data="close2"),
-        ]
-    ]
-)
-
-close_keyboard = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("ᴛᴜᴛᴜᴘ", callback_data="close2")]]
-)
 
 play_list_keyboard = InlineKeyboardMarkup( 
             [
@@ -235,63 +204,6 @@ def playlist_markup(user_name, user_id):
             ],
         ]
     return buttons
-
-
-def start_pannel():
-    if not CHANNEL and not GROUP:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    text="🔧 sᴇᴛᴛɪɴɢs", callback_data="settingm"
-                )
-            ],
-        ]
-        return f"🎛  **This is {BOT_NAME}**", buttons
-    if not CHANNEL and GROUP:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    text="🔧 sᴇᴛᴛɪɴɢs", callback_data="settingm"
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="✨ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
-                ),
-            ],
-        ]
-        return f"🎛  **This is {MUSIC_BOT_NAME}*", buttons
-    if CHANNEL and not GROUP:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    text="🔧 sᴇᴛᴛɪɴɢs", callback_data="settingm"
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="✨ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP}"
-                ),
-            ],
-        ]
-        return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
-    if CHANNEL and GROUP:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    text="🔧 sᴇᴛᴛɪɴɢs", callback_data="settingm"
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="✨ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"
-                ),
-                InlineKeyboardButton(
-                    text="✨ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
-                ),
-            ],
-        ]
-        return f"🎛  **This is {BOT_NAME}**", buttons
 
 
 def private_panel():
