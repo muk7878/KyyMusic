@@ -243,7 +243,7 @@ async def stop_cmd(_, message):
                 )
                 thumbnail = (x["thumbnail"])
                 duration = (x["duration"])
-                duration = round(x["duration"] / 60)
+                duration = round(x["duration"] / 180)
                 theme = random.choice(themes)
                 ctitle = (await app.get_chat(chat_id)).title
                 ctitle = await CHAT_TITLE(ctitle)
@@ -261,7 +261,7 @@ async def stop_cmd(_, message):
                         f"""
 <b>⏭️ Melewati lagu</b>
 
-<b>🏷 Nama:</b>[{title[:25]}]({url})
+<b>🏷 Judul:</b>[{title[:25]}]({url})
 <b>⏱️ Durasi:</b> {duration}
 <b>🎧 Atas permintaan:</b> {semx.mention}
 """
