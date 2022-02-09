@@ -19,7 +19,7 @@ chat_watcher_group = 3
 
 def time_to_seconds(time):
     stringt = str(time)
-    return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":"))))
+    return sum(int(x) * 180 ** i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
 @Client.on_message(
@@ -59,7 +59,7 @@ Kembalikan ke Akun Pengguna Dari Hak Admin.
         smex = int(time_to_seconds(duration))
         if smex > DURATION_LIMIT:
             return await mystic.edit_text(
-                f"**__Duration Error__**\n\n**Allowed Duration: **90 minute(s)\n**Received Duration:** {duration} minute(s)"
+                f"**__Duration Error__**\n\n**Allowed Duration: **180 minute(s)\n**Received Duration:** {duration} minute(s)"
             )
         if duration == "None":
             return await mystic.edit_text("Sorry! Live videos are not Supported")
@@ -125,7 +125,7 @@ Kembalikan ke Akun Pengguna Dari Hak Admin.
             query,
         )
         hmo = await message.reply_text(
-            f"**✨ Silahkan Pilih Mana Yang Ingin Didownload**\n\n¹ <b>{title1[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n² <b>{title2[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n³ <b>{title3[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁴ <b>{title4[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁵ <b>{title5[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__",    
+            f"**⚡ Silahkan Pilih Mana Yang Ingin Didownload**\n\n¹ <b>{title1[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n² <b>{title2[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n³ <b>{title3[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁴ <b>{title4[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁵ <b>{title5[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__",    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True
         )  
@@ -151,7 +151,7 @@ async def startyuplay(_, CallbackQuery):
         )
     if CallbackQuery.from_user.id != int(user_id):
         return await CallbackQuery.answer(
-            "This is not for you! Search You Own Song nigga", show_alert=True
+            "Ini bukan untukmu! Cari Lagu Lu Sendiri Kontol", show_alert=True
         )
     await CallbackQuery.message.delete()
     checking = f"[{CallbackQuery.from_user.first_name}](tg://user?id={userid})"
@@ -160,7 +160,7 @@ async def startyuplay(_, CallbackQuery):
     smex = int(time_to_seconds(duration))
     if smex > DURATION_LIMIT:
         await CallbackQuery.message.reply_text(
-            f"**__Duration Error__**\n\n**Allowed Duration: **90 minute(s)\n**Received Duration:** {duration} minute(s)"
+            f"**__Duration Error__**\n\n**Allowed Duration: **180 minute(s)\n**Received Duration:** {duration} minute(s)"
         )
         return
     try:
@@ -206,7 +206,7 @@ async def chonga(_, CallbackQuery):
         )
     if CallbackQuery.from_user.id != int(user_id):
         return await CallbackQuery.answer(
-            "This is not for you! Search You Own Song", show_alert=True
+            "Ini bukan untukmu! Cari Lagu Lu Sendiri Kontol", show_alert=True
         )
     i = int(id)
     query = str(query)
@@ -263,7 +263,7 @@ async def chonga(_, CallbackQuery):
             query,
         )
         await CallbackQuery.edit_message_text(
-            f"**✨ Silahkan Pilih Mana Yang Ingin Didownload**\n\n⁶ <b>{title6[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID6})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁷ <b>{title7[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID7})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁸ <b>{title8[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID8})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁹ <b>{title9[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID9})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n¹⁰ <b>{title10[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID10})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__",    
+            f"**⚡ Silahkan Pilih Mana Yang Ingin Didownload**\n\n⁶ <b>{title6[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID6})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁷ <b>{title7[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID7})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁸ <b>{title8[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID8})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁹ <b>{title9[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID9})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n¹⁰ <b>{title10[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID10})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__",    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True
         )
@@ -284,7 +284,7 @@ async def chonga(_, CallbackQuery):
             query,
         )
         await CallbackQuery.edit_message_text(
-            f"**✨ Silahkan Pilih Mana Yang Ingin Didownload**\n\n¹ <b>{title1[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n² <b>{title2[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n³ <b>{title3[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁴ <b>{title4[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁵ <b>{title5[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__",    
+            f"**⚡ Silahkan Pilih Mana Yang Ingin Didownload**\n\n¹ <b>{title1[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n² <b>{title2[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n³ <b>{title3[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁴ <b>{title4[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁵ <b>{title5[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__",    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True 
         )  
@@ -307,30 +307,30 @@ def search_markup(
     buttons = [
         [
             InlineKeyboardButton(
-                text="¹", callback_data=f"beta {ID1}|{duration1}|{user_id}"
+                text="1️⃣", callback_data=f"beta {ID1}|{duration1}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="²", callback_data=f"beta {ID2}|{duration2}|{user_id}"
+                text="2️⃣", callback_data=f"beta {ID2}|{duration2}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="³", callback_data=f"beta {ID3}|{duration3}|{user_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="⁴", callback_data=f"beta {ID4}|{duration4}|{user_id}"
-            ),
-            InlineKeyboardButton(
-                text="⁵", callback_data=f"beta {ID5}|{duration5}|{user_id}"
+                text="3️⃣", callback_data=f"beta {ID3}|{duration3}|{user_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⪻", callback_data=f"chonga 1|{query}|{user_id}"
+                text="4️⃣", callback_data=f"beta {ID4}|{duration4}|{user_id}"
+            ),
+            InlineKeyboardButton(
+                text="5️⃣", callback_data=f"beta {ID5}|{duration5}|{user_id}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="⬅️", callback_data=f"chonga 1|{query}|{user_id}"
             ),
             InlineKeyboardButton(text="✘", callback_data=f"ppcl2 smex|{user_id}"),
             InlineKeyboardButton(
-                text="⪼", callback_data=f"chonga 1|{query}|{user_id}"
+                text="➡️", callback_data=f"chonga 1|{query}|{user_id}"
             ),
         ],
     ]
@@ -354,30 +354,30 @@ def search_markup2(
     buttons = [
         [
             InlineKeyboardButton(
-                text="⁶", callback_data=f"beta {ID6}|{duration6}|{user_id}"
+                text="6️⃣", callback_data=f"beta {ID6}|{duration6}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="⁷", callback_data=f"beta {ID7}|{duration7}|{user_id}"
+                text="7️⃣", callback_data=f"beta {ID7}|{duration7}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="⁸", callback_data=f"beta {ID8}|{duration8}|{user_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="⁹", callback_data=f"beta {ID9}|{duration9}|{user_id}"
-            ),
-            InlineKeyboardButton(
-                text="¹⁰", callback_data=f"beta {ID10}|{duration10}|{user_id}"
+                text="8️⃣", callback_data=f"beta {ID8}|{duration8}|{user_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⪻", callback_data=f"chonga 2|{query}|{user_id}"
+                text="9️⃣", callback_data=f"beta {ID9}|{duration9}|{user_id}"
+            ),
+            InlineKeyboardButton(
+                text="🔟", callback_data=f"beta {ID10}|{duration10}|{user_id}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="⬅️", callback_data=f"chonga 2|{query}|{user_id}"
             ),
             InlineKeyboardButton(text="✘", callback_data=f"ppcl2 smex|{user_id}"),
             InlineKeyboardButton(
-                text="⪼", callback_data=f"chonga 2|{query}|{user_id}"
+                text="➡️", callback_data=f"chonga 2|{query}|{user_id}"
             ),
         ],
     ]
