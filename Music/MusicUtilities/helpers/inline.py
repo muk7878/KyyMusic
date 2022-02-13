@@ -15,6 +15,7 @@ def play_markup(videoid, user_id):
             InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"),
         ],
         [      
+               InlineKeyboardButton(text="sini Musikan​​", url=f"https://t.me/musikansini"),
                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data=f"close"),
         ],
     ]
