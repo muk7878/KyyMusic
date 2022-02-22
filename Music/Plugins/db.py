@@ -1,14 +1,17 @@
 
 import asyncio
 
+from pyrogram.types import Message
+
 from pyrogram import filters
 
 from Music import app, SUDOERS
 
+from MusicUtilities.helpers.filters import command
 from Music.MusicUtilities.database.chats import get_served_chats
 
 @app.on_message(filters.command("broadcast_pin") & filters.user(SUDOERS))
-async def broadcast_message_pin_silent(_, message):
+async def broadcast_message_pin_silent(_, message: Message):
     if not message.reply_to_message:
         pass
     else:
