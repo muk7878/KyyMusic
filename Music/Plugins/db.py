@@ -7,7 +7,7 @@ from pyrogram import filters
 
 from Music import app, SUDOERS
 
-from MusicUtilities.helpers.filters import command
+from Music.MusicUtilities.helpers.filters import command
 from Music.MusicUtilities.database.chats import get_served_chats
 
 @app.on_message(filters.command("broadcast_pin") & filters.user(SUDOERS))
