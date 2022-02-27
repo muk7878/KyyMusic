@@ -45,7 +45,7 @@ async def _human_time_duration(seconds):
 KYY_IMG = "https://telegra.ph/file/2b610c918dec590d2777b.jpg"
 
 
-@app.on_message(filters.command(["alive", "alive@Tg_Vc_00_Bot"]))
+@app.on_message(filters.command(["myalive", "myalive@Tg_Vc_00_Bot"]))
 async def alive(client, message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
