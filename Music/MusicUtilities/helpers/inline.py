@@ -15,7 +15,6 @@ def play_markup(videoid, user_id):
             InlineKeyboardButton(text="ᴍᴇɴᴜ⚙️", callback_data=f"other {videoid}|{user_id}"),
         ],
         [
-               InlineKeyboardButton(text="Jasa bikin bot​​", url=f"https://t.me/Syasamusic/5"),
                InlineKeyboardButton(text="Perintah Music", url=f"https://t.me/Syasamusic/3"),
         ],
         [
