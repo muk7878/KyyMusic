@@ -804,7 +804,7 @@ async def popat(_,CallbackQuery):
     if i == 1:
         buttons = search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query)
         await CallbackQuery.edit_message_text(
-            f"**⚡ Silahkan pilih lagu yang ingin anda putar**\n\n⁶ <b>{title6}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID6})</u>\n ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁷ <b>{title7}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID7})</u>\n ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁸ <b>{title8}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID8})</u>\n ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁹ <b>{title9}</b>\n┣   ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID9})</u>\n┗   ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n¹⁰ <b>{title10}</b>\n┣   ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID10})</u>\n┗   ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}",
+            f"**⚡ Silahkan pilih lagu yang ingin anda putar**\n\n⁶ <b>{title6}</b>\n┣   ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID6})</u>\n┗  ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁷ <b>{title7}</b>\n┣   ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID7})</u>\n  ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁸ <b>{title8}</b>\n┣   ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID8})</u>\n  ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁹ <b>{title9}</b>\n┣    ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID9})</u>\n    ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n¹⁰ <b>{title10}</b>\n┣    ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID10})</u>\n┗    ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}",
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True
         )  
