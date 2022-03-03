@@ -485,7 +485,25 @@ Saya perlu menjadi admin dengan beberapa izin:
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_photo(
             photo=thumb,
-            caption=f"**✨ Silahkan pilih lagu yang ingin anda putar**\n\n¹ <b>{title1}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})</u>\n  ┗  ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n² <b>{title2}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})</u>\n  ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n³ <b>{title3}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})</u>\n  ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁴ <b>{title4}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})</u>\n  ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁵ <b>{title5}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})</u>\n  ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}",
+            caption=
+            f"""
+**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴘᴜᴛᴀʀ ᴋᴏɴᴛᴏʟ 👀**
+¹ <b>{title1[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID1})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+² <b>{title2[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID2})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+³ <b>{title3[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID3})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+⁴ <b>{title4[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID3})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+⁵ <b>{title5[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID3})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+""",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
         disable_web_page_preview=True
@@ -804,7 +822,24 @@ async def popat(_,CallbackQuery):
     if i == 1:
         buttons = search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query)
         await CallbackQuery.edit_message_text(
-            f"**⚡ Silahkan pilih lagu yang ingin anda putar**\n\n⁶ <b>{title6}</b>\n    ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID6})</u>\n    ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁷ <b>{title7}</b>\n    ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID7})</u>\n    ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁸ <b>{title8}</b>\n    ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID8})</u>\n    ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁹ <b>{title9}</b>\n    ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID9})</u>\n    ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n¹⁰ <b>{title10}</b>\n    ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID10})</u>\n    ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}",
+             f"""
+<b>**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴘᴜᴛᴀʀ ᴋᴏɴᴛᴏʟ 👀**</b>
+⁶ <b>{title6[:60]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID3})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+⁷ <b>{title7[:60]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID3})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+⁸ <b>{title8[:60]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID3})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+⁹ <b>{title9[:60]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID3})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+¹⁰ <b>{title10[:60]}</b>
+   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID3})
+   ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+""",
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True
         )  
@@ -812,7 +847,24 @@ async def popat(_,CallbackQuery):
     if i == 2:
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await CallbackQuery.edit_message_text(
-            f"**⚡ Silahkan pilih lagu yang ingin anda putar**\n\n¹ <b>{title1}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})</u>\n  ┗  ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n² <b>{title2}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})</u>\n  ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n³ <b>{title3}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})</u>\n  ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁴ <b>{title4}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})</u>\n  ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}\n\n⁵ <b>{title5}</b>\n  ┣ ❒ <u>[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})</u>\n  ┗ ❒ ᴘᴇᴍɪʟɪᴋ : {BOT_NAME}",
+            f"""
+**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴘᴜᴛᴀʀ ᴋᴏɴᴛᴏʟ 👀**
+¹ <b>{title1[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID1})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+² <b>{title2[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID2})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+³ <b>{title3[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID3})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+⁴ <b>{title4[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID3})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+⁵ <b>{title5[:65]}</b>
+  ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic start=info_{ID3})
+  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+""",
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True 
         )  
