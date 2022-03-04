@@ -490,19 +490,19 @@ Saya perlu menjadi admin dengan beberapa izin:
 **🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴘᴜᴛᴀʀ 👀**
 ¹ <b>{title1[:65]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 ² <b>{title2[:65]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 ³ <b>{title3[:65]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 ⁴ <b>{title4[:65]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 ⁵ <b>{title5[:65]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
@@ -826,19 +826,19 @@ async def popat(_,CallbackQuery):
 <b>**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴘᴜᴛᴀʀ 👀**</b>
 ⁶ <b>{title6[:60]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 ⁷ <b>{title7[:60]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ *{BOT_NAME}**
 ⁸ <b>{title8[:60]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 ⁹ <b>{title9[:60]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 ¹⁰ <b>{title10[:60]}</b>
    ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-   ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+   ╚ ❒ **{BOT_NAME}**
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True
@@ -851,19 +851,19 @@ async def popat(_,CallbackQuery):
 **🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴘᴜᴛᴀʀ 👀**
 ¹ <b>{title1[:65]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 ² <b>{title2[:65]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 ³ <b>{title3[:65]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 ⁴ <b>{title4[:65]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 ⁵ <b>{title5[:65]}</b>
   ╠ ❒ [𝐈𝐍𝐅𝐎 𝐋𝐄𝐁𝐈𝐇 𝐋𝐀𝐍𝐉𝐔𝐓](https://t.me/Syasamusic)
-  ╚ ❒ ᴘᴇᴍɪʟɪᴋ : **{BOT_NAME}**
+  ╚ ❒ **{BOT_NAME}**
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True 
