@@ -1,6 +1,4 @@
-# By Kenkan And Skyzo and kyy
 
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Music.config import LOG_GROUP_ID
 from Music import app
 
@@ -22,8 +20,5 @@ __**New {what}**__
 **User ID:** `{message.from_user.id}`
 **Chat Link:** {chatusername}
 **Query:** {message.text}"""
-    await app.send_message(LOG_GROUP_ID, 
-               text = f"{logger_text}", 
-               reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(text="ᴠɪᴇᴡs​​", url=f"https://t.me/{message.from_user.username}")]]),
-               disable_web_page_preview=True,
-          )
+    await app.send_message(LOG_GROUP_ID, f"{logger_text}", disable_web_page_preview=True)
+    
